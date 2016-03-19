@@ -7,6 +7,15 @@
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script>
     $(function(){
+      $('input').keyup(function(){
+        var userInput=$(this).val();
+        var userInputLength=userInput.length;
+        var remaining= 40 - userInputLength;
+      if(userInput.length== 40){
+        
+      }
+        
+      });
       
       // Without modifying any HTML, make the character count
       // show how many characters are remaining (starting from 40).
